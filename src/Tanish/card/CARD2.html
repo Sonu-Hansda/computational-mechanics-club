@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Card with Button</title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div
+      class="max-w-xs bg-[#01110a] rounded-lg shadow-md border border-gray-200"
+    >
+      <div class="w-full h-40 flex items-center justify-center">
+        <img
+          src="aiml.jpg"
+          alt="AI ML"
+          class="object-cover w-full h-full rounded-t-lg"
+        />
+      </div>
+
+      <div class="p-4">
+        <a href="#">
+          <h2 class="text-lg font-semibold text-gray-50">
+            Artificial Intelligence (AI) & Machine Learning (ML)
+          </h2>
+        </a>
+        <p class="mt-2 text-sm text-gray-100">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+          dolores, possimus pariatur animi temporibus nesciunt praesentium.
+        </p>
+
+        <!-- Tailwind Gradient Green Button -->
+        <div class="mt-4 flex justify-center">
+          <button
+            class="relative overflow-hidden h-12 px-8 rounded-full bg-gray-700 text-white border-none cursor-pointer transition-all duration-500 ease-in-out before:absolute before:top-0 before:left-0 before:w-full before:h-full before:scale-x-0 before:origin-left before:rounded-full before:bg-gradient-to-r before:from-green-400 before:to-green-700 before:transition-transform before:duration-500 hover:before:scale-x-100"
+          >
+            <span class="relative z-10">About</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
