@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Header/>
-      <main className='min-h-screen px-32 py-8'>
+      <main className='min-h-screen px-32 py-8 mb-4'>
         <div>
           <Hero/>
         </div>
