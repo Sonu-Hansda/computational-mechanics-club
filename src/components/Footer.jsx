@@ -53,7 +53,7 @@ const Footer = () => {
         <li><a href="#" className="hover:text-gray-300">Contact</a></li>
       </ul>
 
-      <p className="mt-2 text-gray-200">&copy; 2025 CMC | All Rights Reserved</p>
+      <p className="mt-2 text-gray-200">&copy; 2025 CMDC | All Rights Reserved</p>
     </footer>
   );
 };
