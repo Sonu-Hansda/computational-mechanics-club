@@ -14,32 +14,32 @@ export default function Projects() {
                         {
                             title: "CAD Mechanical Arm",
                             category: "CAD Design",
-                            image: "https://picsum.photos/seed/solidworks/600/400 "
+                            image: "https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/a42453b182001f5f018a3603a6e1e4f1/large.png"
                         },
                         {
                             title: "Fluid Flow Simulation",
                             category: "CFD Analysis",
-                            image: "https://picsum.photos/seed/ansys/600/400 "
+                            image: "https://www.simscale.com/wp-content/uploads/2017/01/flow-around-an-airplane.jpg"
                         },
                         {
                             title: "ML-Based Anomaly Detection",
                             category: "AI/ML Project",
-                            image: "https://picsum.photos/seed/machinelearning/600/400 "
+                            image: "https://cdn.sanity.io/images/oaglaatp/production/ed4d3b041af89853060675b0a5c1ac88ae3cfeba-1369x937.png?w=1369&h=937&auto=format"
                         },
                         {
                             title: "Mobile App Prototype",
                             category: "UI/UX Design",
-                            image: "https://picsum.photos/seed/figma/600/400 "
+                            image: "https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1695314699/catalog/1704744635590299648/dc4jkqbajqluux0ycaow.jpg"
                         },
                         {
                             title: "Structural Stress Test",
                             category: "FEA Simulation",
-                            image: "https://picsum.photos/seed/fem/600/400 "
+                            image: "https://www.citi.ac.ug/public/store/1/default_images/coarses/Structural-Analyis-of-Buildings.png"
                         },
                         {
                             title: "User Interface Wireframe",
                             category: "Product Design",
-                            image: "https://picsum.photos/seed/wireframe/600/400 "
+                            image: "https://images.ctfassets.net/w6r2i5d8q73s/5DKsAhUu3WXSG5c1NyX7Ga/fa6629512d9c56c52eb9dadea11e82ff/screen-flow-web.png?fm=webp&q=75"
                         }
                     ].map((project, index) => (
                         <div
