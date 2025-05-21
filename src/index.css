@@ -5,12 +5,34 @@ html,
 body {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
 
- @keyframes slideIn {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-slideIn {
-          animation: slideIn 1s ease-out forwards;
-        }
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideIn {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideWipe {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.slide-enter {
+  animation: slideWipe 1s ease-in-out forwards;
+}
