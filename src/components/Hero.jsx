@@ -1,36 +1,32 @@
-function Hero() {
+export default function Hero() {
     return (
-        <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
-            <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-                <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-                    <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit
-                    </h2>
-
-                    <p className="hidden text-gray-500 md:mt-4 md:block">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-                        sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-                        quisque ut interdum tincidunt duis.
-                    </p>
-
-                    <div className="mt-4 md:mt-8">
-                        <a
-                            href="#"
-                            className="inline-block rounded-sm bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:ring-3 focus:ring-yellow-400 focus:outline-hidden"
-                        >
-                            Know More !
-                        </a>
-                    </div>
-                </div>
+        <section id="home" className="relative pt-24 md:pt-32 pb-16 md:pb-24 min-h-screen flex items-center justify-center overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="https://picsum.photos/seed/cmdc-hero/1920/1080 "
+                    alt="Club background"
+                    className="w-full h-full object-cover brightness-50 contrast-100"
+                />
             </div>
 
-            <img
-                alt=""
-                src="https://images.unsplash.com/photo-1600869009498-8d429f88d4f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="h-56 w-full object-cover sm:h-full"
-            />
+            {/* Centered Content */}
+            <div className="relative z-10 text-center px-4 animate-slideIn">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
+                    Computational Mechanics & Design Club
+                </h1>
+                <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-lg mx-auto drop-shadow-md">
+                    We build future-ready engineers through CAD, Simulation, AI/ML, and Product Design.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                    <a href="#domains" className="px-8 py-3 bg-gradient-to-r from-[#00ffe1] to-[#7d12ff] text-black font-medium rounded-md hover:from-[#7d12ff] hover:to-[#00ffe1] hover:text-white transition-all shadow-lg hover:shadow-[#00ffe1]/30">
+                        Explore Domains
+                    </a>
+                    <a href="#projects" className="px-8 py-3 border border-[#00ffe1] text-[#00ffe1] font-medium rounded-md hover:bg-[#00ffe1]/10 transition-colors">
+                        View Projects
+                    </a>
+                </div>
+            </div>
         </section>
     )
 }
-
-export default Hero
