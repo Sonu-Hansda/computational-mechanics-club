@@ -7,43 +7,10 @@ body {
   font-optical-sizing: auto;
 }
 
-@keyframes wave {
-    0% {
-      background-position-x: 1000px;
-    }
-    100% {
-      background-position-x: 0px;
-    }
-}
-
-.wave {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    background: url("/wave.png");
-    background-size: 1000px 100px;
-    bottom: 0;
-}
-
-.wave1 {
-    animation: wave 4s linear infinite;
-    opacity: 1;
-}
-
-.wave2 {
-    animation: wave 4s linear infinite reverse;
-    opacity: 0.5;
-    bottom: 10px;
-}
-
-.wave3 {
-    animation: wave 3s linear infinite;
-    opacity: 0.2;
-    bottom: 15px;
-}
-
-.wave4 {
-    animation: wave 3s linear infinite reverse;
-    opacity: 0.7;
-    bottom: 20px;
-}
+ @keyframes slideIn {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slideIn {
+          animation: slideIn 1s ease-out forwards;
+        }
