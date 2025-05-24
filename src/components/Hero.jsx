@@ -45,7 +45,7 @@ export default function Hero() {
                     We build future-ready engineers through CAD, Simulation, AI/ML, and Product Design.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                    <a href="#domains" className="px-8 py-3 bg-gradient-to-r from-[#00ffe1] to-[#7d12ff] text-black font-medium rounded-md hover:from-[#7d12ff] hover:to-[#00ffe1] hover:text-white transition-all shadow-lg hover:shadow-[#00ffe1]/30">
+                    <a href="#domains" className="px-8 py-3 bg-gradient-to-b from-[#00ffe1] to-[#0c6e77] text-black font-medium rounded-md hover:from-[#0a6971] hover:to-[#00ffe1] hover:text-white transition-all shadow-lg hover:shadow-[#00ffe1]/30">
                         Explore Domains
                     </a>
                     <a href="#projects" className="px-8 py-3 border border-[#00ffe1] text-[#00ffe1] font-medium rounded-md hover:bg-[#00ffe1]/10 transition-colors">

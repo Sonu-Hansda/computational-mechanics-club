@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [showNav, setShowNav] = useState(true);
@@ -61,24 +62,30 @@ export default function Header() {
                 }`}
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16 md:h-20">
-                    <a href="#home" className="text-xl font-bold text-[#00ffe1]">CMDC</a>
+                <div className="flex items-center gap-x-2 h-16 md:h-20">
+                    <img className="  h-12 md:h-15" src='/images/cmdclogo.png' alt="Logo"  />
+            
+                         <div className=" flex items-center  gap-x-250">
 
+                   
+                    <a  href="#home" className=" text-xl font-bold text-[#fffff]">CMDC</a>
+                    
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex space-x-8">
+                    <nav className="  hidden md:flex space-x-8">
                         {['home', 'domains', 'projects', 'about', 'contact'].map((item) => (
                             <a
-                                key={item}
-                                href={`#${item}`}
-                                className={`capitalize text-sm font-medium transition-colors ${activeSection === item
-                                    ? 'text-[#00ffe1]'
-                                    : 'text-gray-300 hover:text-[#00ffe1]'
-                                    }`}
+                            key={item}
+                            href={`#${item}`}
+                            className={`capitalize text-sm font-medium transition-colors ${activeSection === item
+                                ? 'text-[#00ffe1]'
+                                : 'text-gray-300 hover:text-[#00ffe1]'
+                            }`}
                             >
                                 {item}
                             </a>
                         ))}
                     </nav>
+                        </div>
 
                     {/* Mobile Menu Button */}
                     <button

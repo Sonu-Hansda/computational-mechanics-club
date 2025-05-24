@@ -23,9 +23,9 @@ export default function About() {
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="absolute -inset-4 bg-gradient-to-r from-[#00ffe1] to-[#7d12ff] rounded-lg blur opacity-30"></div>
+                        <div className="absolute -inset-1 bg-gradient-to-b from-[#00ffe1] to-[#026969] rounded-lg blur opacity-60"></div>
                         <img
-                            src="https://picsum.photos/seed/teamwork/600/400 "
+                            src="/images/simulation.jpg"
                             alt="Team collaboration"
                             className="relative rounded-lg shadow-xl"
                         />

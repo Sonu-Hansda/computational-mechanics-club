@@ -40,7 +40,7 @@ export default function Footer() {
                         <p className="text-gray-400 text-sm">
                             Interested in joining our club or collaborating?
                         </p>
-                        <a href="#contact" className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-[#00ffe1] to-[#7d12ff] text-black text-sm font-medium rounded-md hover:opacity-90 transition-opacity">
+                        <a href="#contact" className="inline-block mt-2 px-4 py-2 bg-gradient-to-b from-[#00ffe1] to-[#0a6971] text-black text-sm font-medium rounded-md hover:opacity-90 transition-opacity">
                             Get in Touch
                         </a>
                     </div>
