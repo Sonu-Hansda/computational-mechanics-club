@@ -63,29 +63,27 @@ export default function Header() {
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-x-2 h-16 md:h-20">
-                    <img className="  h-12 md:h-15" src='/images/cmdclogo.png' alt="Logo"  />
-            
-                         <div className=" flex items-center  gap-x-250">
-
-                   
-                    <a  href="#home" className=" text-xl font-bold text-[#fffff]">CMDC</a>
-                    
-                    {/* Desktop Navigation */}
-                    <nav className="  hidden md:flex space-x-8">
-                        {['home', 'domains', 'projects', 'about', 'contact'].map((item) => (
-                            <a
-                            key={item}
-                            href={`#${item}`}
-                            className={`capitalize text-sm font-medium transition-colors ${activeSection === item
-                                ? 'text-[#00ffe1]'
-                                : 'text-gray-300 hover:text-[#00ffe1]'
-                            }`}
-                            >
-                                {item}
-                            </a>
-                        ))}
-                    </nav>
+                    <div className="w-full flex items-center justify-between">
+                        <div className="flex gap-x-1.5 items-center">
+                            <img className="h-8 md:h-12 w-8 md:w-12" src="/images/cmdclogo.png" />
+                            <h2 className="text-white font-semibold text-xl">CMDC</h2>
                         </div>
+                        {/* Desktop Navigation */}
+                        <nav className="  hidden md:flex space-x-8">
+                            {['home', 'domains', 'projects', 'about', 'contact'].map((item) => (
+                                <a
+                                    key={item}
+                                    href={`#${item}`}
+                                    className={`capitalize text-sm font-medium transition-colors ${activeSection === item
+                                        ? 'text-[#00ffe1]'
+                                        : 'text-gray-300 hover:text-[#00ffe1]'
+                                        }`}
+                                >
+                                    {item}
+                                </a>
+                            ))}
+                        </nav>
+                    </div>
 
                     {/* Mobile Menu Button */}
                     <button
