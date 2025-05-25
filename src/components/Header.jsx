@@ -74,7 +74,7 @@ export default function Header() {
                                 <a
                                     key={item}
                                     href={`#${item}`}
-                                    className={`capitalize text-sm font-medium transition-colors ${activeSection === item
+                                    className={`capitalize font-medium transition-colors ${activeSection === item
                                         ? 'text-[#00ffe1]'
                                         : 'text-gray-300 hover:text-[#00ffe1]'
                                         }`}
