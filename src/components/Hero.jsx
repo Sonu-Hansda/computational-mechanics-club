@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 export default function Hero() {
     const images = [
-        "https://images.unsplash.com/photo-1684687931478-76d7e7cd35b7?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://seacadtech.com/wp-content/uploads/2023/10/FEA-Simulation.png",
         "https://images.unsplash.com/photo-1604591259403-81d6c9cf87d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
