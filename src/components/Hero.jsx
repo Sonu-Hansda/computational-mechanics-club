@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 
 export default function Hero() {
     const images = [
-        "https://seacadtech.com/wp-content/uploads/2023/10/FEA-Simulation.png",
-        "https://images.unsplash.com/photo-1604591259403-81d6c9cf87d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "https://seacadtech.com/wp-content/uploads/2023/10/FEA-Simulation.png ",
+        "https://images.unsplash.com/photo-1604591259403-81d6c9cf87d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
     ];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -22,21 +22,22 @@ export default function Hero() {
                 {images.map((src, index) => (
                     <div
                         key={src}
-                        className={`absolute inset-0 bg-cover bg-center transition-all duration-[1000ms] ease-in-out ${index === currentImageIndex ? 'opacity-100 translate-x-0' :
-                                index < currentImageIndex ? '-translate-x-full opacity-0' :
-                                    'translate-x-full opacity-0'
-                            }`}
+                        className={`absolute inset-0 bg-cover bg-center transition-all duration-[1000ms] ease-in-out ${
+                            index === currentImageIndex ? 'opacity-100 translate-x-0' :
+                            index < currentImageIndex ? '-translate-x-full opacity-0' : 'translate-x-full opacity-0'
+                        }`}
                         style={{
                             backgroundImage: `url(${src})`,
                             zIndex: index === currentImageIndex ? 10 : 1,
                         }}
                     />
                 ))}
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-10"></div>
             </div>
 
-            {/* Centered Content */}
+            <div className="absolute inset-0 bg-black/30 backdrop-blur-[3px] z-10"></div>
+
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-10"></div>
+
             <div className="relative z-20 text-center px-4 animate-slideIn">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
                     Computational Mechanics & Design Club
