@@ -1,1 +1,1 @@
-# CMC | Computational Mechanics Club
+# CMDC | Computational Mechanics and Design Club
