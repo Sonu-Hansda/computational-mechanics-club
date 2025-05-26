@@ -34,7 +34,7 @@ export default function Hero() {
                 ))}
             </div>
 
-            <div className="absolute inset-0 bg-black/30 backdrop-blur-[3px] z-10"></div>
+            <div className="absolute inset-0 bg-black/30 backdrop-blur-[0.9px] z-10"></div>
 
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-10"></div>
 
