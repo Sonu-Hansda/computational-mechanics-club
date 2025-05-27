@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
+import AllProjects from './components/AllProjects'; 
 
 function HomePage() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
+         <Route path="/all-projects" element={<AllProjects />} />
       </Routes>
     </Router>
   );

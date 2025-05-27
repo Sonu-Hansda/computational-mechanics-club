@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom';
-export default function Projects() {
+import { Link, useNavigate } from 'react-router-dom';
+
+export default function AllProjects() {
+    const navigate = useNavigate();
     const projectData = [
         {
             title: "Design and Development of  Automated Household Waste Segregation System",
@@ -57,19 +59,25 @@ export default function Projects() {
             image: "..//images/Reverse_countdown.png"
         }
     ];
-    
-    return (
-        <section id="projects" className="py-16 md:py-24 bg-gray-900">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Projects</h2>
-                    <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                        Check out some of the exciting projects our members have built.
-                    </p>
-                </div>
 
+    return (
+        
+        <section className="py-16 md:py-24 bg-gray-900 text-white">
+          
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                   <button
+        onClick={() => navigate(-1)}
+        className="absolute top-6 right-6 px-4 py-2 bg-[#00ffe1] text-black rounded hover:bg-[#00ffe1]/80 transition"
+      >
+        Close
+      </button>
+      
+          
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">All Projects</h2>
+                
+                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {projectData.slice(0, 6).map((project, index) => (
+                    {projectData.map((project, index) => (
                         <Link to={`/projects/${index}`} key={index}>
                             <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-[#00ffe1]/30 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
                                 <img
@@ -86,15 +94,6 @@ export default function Projects() {
                             </div>
                         </Link>
                     ))}
-                </div>
-
-                <div className="mt-12 text-center">
-                     <Link to="/all-projects" className="inline-flex items-center px-6 py-3 border border-[#00ffe1] text-[#00ffe1] font-medium rounded-md hover:bg-[#00ffe1]/10 transition-colors">
-    View All Projects
-    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-    </svg>
-  </Link>
                 </div>
             </div>
         </section>

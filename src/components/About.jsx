@@ -6,7 +6,7 @@ export default function About() {
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
                         <p className="text-lg text-gray-300 mb-6">
-                            CMDC is a student-run organization focused on building practical skills in modern engineering and tech domains.
+                           CMDC is a student-led initiative dedicated to cultivating practical, industry-relevant skills in cutting-edge engineering and technology fields.
                         </p>
                         <p className="text-lg text-gray-300 mb-8">
                             We provide hands-on workshops, collaborative project development, and mentorship to help students grow technically and professionally.
