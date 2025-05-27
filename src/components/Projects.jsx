@@ -5,32 +5,32 @@ export default function Projects() {
         {
             title: "Wack-a-Mole Game",
             category: "CAD Design",
-            image: "../../public/images/Wack-a-mole.jpg"
+            image: "/images/Wack-a-mole.jpg"
         },
         {
             title: "Traffic Light Simulation",
             category: "CFD Analysis",
-            image: "../../public/images/traffic_light.png"
+            image: "/images/traffic_light.png"
         },
         {
             title: "Melody Buzzers",
             category: "AI/ML Project",
-            image: "../../public/images/Melody_Buzzers.png"
+            image: "/images/Melody_Buzzers.png"
         },
         {
             title: "Stack Tower Game",
             category: "UI/UX Design",
-            image: "../public/images/Stack_tower_game.jpg"
+            image: "/images/Stack_tower_game.jpg"
         },
         {
             title: "RGB Light Control",
             category: "FEA Simulation",
-            image: "../../public/images/RGB_Light_arduino.png"
+            image: "..//images/RGB_Light_arduino.png"
         },
         {
             title: "Reverse Countdown Display",
             category: "Product Design",
-            image: "../../public/images/Reverse_countdown.png"
+            image: "..//images/Reverse_countdown.png"
         }
     ];
 
