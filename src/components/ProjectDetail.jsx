@@ -46,6 +46,15 @@ const projects = [
       link:"https://github.com/Sushil-09/STT/blob/main"
   },
   {
+    title:
+      "Fish Fin-Inspired Heat Sink Design",
+    category: "OpenSCAD/CAD",
+    image: "/images/aditya.jpg",
+    description:
+      "This project explores a novel approach to thermal management in electronic devices by designing a heat sink inspired by the natural geometry of fish fins. Traditional heat sinks with straight fins often face limitations in airflow and heat dissipation, especially in compact or fanless systems. Drawing from biomimicry, this design uses curved, tilted fins that mimic the flow-efficient structure of fish fins to enhance surface area, guide airflow smoothly, and reduce pressure drop.Using parametric modeling tools like OpenSCAD and Fusion 360, a 3D-printable heat sink was created and evaluated through simulation. Results show improved cooling performance, lower airflow resistance, and better thermal uniformity compared to conventional designs. The project demonstrates how nature-inspired structures can lead to more efficient and sustainable engineering solutions, particularly for low-power and silent electronic systems."
+      
+  },
+  {
     title: "Wack-A-Mole Game",
     category: "CAD Design",
     image: "/images/Wack-a-mole.jpg",
