@@ -26,6 +26,11 @@ export default function Projects() {
             category: "AI/ML",
             image: "/images/sushil.png"
         },
+         {
+            title: "Fish Fin-Inspired Heat Sink Design",
+            category: "OpenSCAD/CAD",
+            image: "/images/aditya.jpg"
+        },
         {
             title: "Wack-a-Mole Game",
             category: "UI/UX Game",
