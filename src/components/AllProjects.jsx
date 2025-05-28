@@ -29,18 +29,23 @@ export default function AllProjects() {
             image: "/images/sushil.png"
         },
         {
+            title: "Fish Fin-Inspired Heat Sink Design",
+            category: "OpenSCAD/CAD",
+            image: "/images/aditya.jpg"
+        },
+        {
             title: "Wack-a-Mole Game",
             category: "UI/UX Game",
             image: "/images/Wack-a-mole.jpg"
         },
         {
             title: "Traffic Light Simulation",
-            category: "CFD Analysis",
+            category: "Embedded Systems / IoT Simulation",
             image: "/images/traffic_light.png"
         },
         {
             title: "Melody Buzzers",
-            category: "AI/ML Project",
+            category: "Embedded Systems / Sound Engineering",
             image: "/images/Melody_Buzzers.png"
         },
         {
@@ -50,7 +55,7 @@ export default function AllProjects() {
         },
         {
             title: "RGB Light Control",
-            category: "FEA Simulation",
+            category: "Embedded Systems / Electronics Simulation",
             image: "..//images/RGB_Light_arduino.png"
         },
         {
