@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
 
 const Contact = () => {
   const form = useRef();
@@ -12,43 +11,47 @@ const Contact = () => {
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    const formData = new FormData(form.current);
-    const formValues = {
-      from_name: formData.get('from_name'),
-      from_email: formData.get('from_email'),
-      user_subject: formData.get('user_subject'),
-      message: formData.get('message'),
-    };
-
-    if (formValues.from_name === '') {
-      setErrMsg('From name is required!');
-    } else if (formValues.from_email === '') {
-      setErrMsg('Please give your Email!');
-    } else if (!emailValidation(formValues.from_email)) {
-      setErrMsg('Give a valid Email!');
-    } else if (formValues.user_subject === '') {
-      setErrMsg('Please give your Subject!');
-    } else if (formValues.message === '') {
-      setErrMsg('Message is required!');
-    } else {
-      emailjs
-        .sendForm('', '', form.current, '')//UPDATE THIS PART AND DONE  1.“Email Templates”  2.public key:apI KEYS PUBLIC KEYS HOGA  3.EmailJS dashboard → Email Services
-        .then(
-          () => {
-            setSuccessMsg(`Thank you dear ${formValues.from_name}, Your Messages has been sent Successfully!`);
-            setErrMsg('');
-            form.current.reset();
-          },
-          (error) => {
-            setErrMsg('An error occurred, please try again');
-            console.log('FAILED...', error.text);
-          }
-        );
-    }
+  const formData = new FormData(form.current);
+  const formValues = {
+    from_name: formData.get('from_name'),
+    from_email: formData.get('from_email'),
+    user_subject: formData.get('user_subject'),
+    message: formData.get('message'),
   };
+
+  if (formValues.from_name === '') {
+    setErrMsg('From name is required!');
+  } else if (formValues.from_email === '') {
+    setErrMsg('Please give your Email!');
+  } else if (!emailValidation(formValues.from_email)) {
+    setErrMsg('Give a valid Email!');
+  } else if (formValues.user_subject === '') {
+    setErrMsg('Please give your Subject!');
+  } else if (formValues.message === '') {
+    setErrMsg('Message is required!');
+  } else {
+    const recipient = "sonukumarhansda61@gmail.com";
+    const subject = encodeURIComponent(formValues.user_subject);
+    const body = encodeURIComponent(
+      `Name: ${formValues.from_name}\nEmail: ${formValues.from_email}\n\n${formValues.message}`
+    );
+
+    const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to= ${recipient}&su=${subject}&body=${body}&tf=1`;
+
+    setErrMsg('');
+    setSuccessMsg("Opening Gmail...");
+
+    window.open(gmailUrl, '_blank');
+
+    setTimeout(() => {
+      setSuccessMsg('');
+      form.current.reset();
+    }, 2000);
+  }
+};
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-gray-900">
@@ -68,7 +71,7 @@ const Contact = () => {
             <p className="mb-4 text-green-500 text-center animate-pulse">{successMsg}</p>
           )}
 
-          <form ref={form} onSubmit={sendEmail} className="space-y-6">
+          <form ref={form} onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="from_name" className="block text-sm font-medium text-gray-400 mb-1">Name</label>
