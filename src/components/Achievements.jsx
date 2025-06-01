@@ -16,7 +16,7 @@ export default function Achievement() {
                             <span className="font-semibold text-[#00ffe1]">Organized by:</span> Indian Society for Applied Mechanics (ISAM) during the 1st Mechanics Lecture Series at IIITDM Kancheepuram
                         </p>
                         <p className="text-lg text-gray-300 mb-8">
-                            <span className="font-semibold text-[#00ffe1]">Team Members:</span> Ravi Ranjan,Aditya Singh,Sushil Chahande and Anubhuti Pali.
+                            <span className="font-semibold text-[#00ffe1]">Team Members:</span> Ravi Ranjan, Aditya Singh, Sushil Chahande and Anubhuti Pali.
                         </p>
                         <a
                             href="https://lnkd.in/gqKyFg6N"
