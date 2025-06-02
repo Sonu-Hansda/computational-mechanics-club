@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 import AllProjects from './components/AllProjects'; 
+import { Analytics } from '@vercel/analytics/react';
 
 function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/projects/:id" element={<ProjectDetail />} />
          <Route path="/all-projects" element={<AllProjects />} />
       </Routes>
+      <Analytics/>
     </Router>
   );
 }
