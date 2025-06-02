@@ -25,7 +25,7 @@ export default function About() {
                     <div className="relative">
                         <div className="absolute -inset-1 bg-gradient-to-b from-[#00ffe1] to-[#026969] rounded-lg blur opacity-60"></div>
                         <img
-                            src="/images/simulation.jpg"
+                            src="/images/workshop.jpg"
                             alt="Team collaboration"
                             className="relative rounded-lg shadow-xl"
                         />

@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import ProjectDetail from './components/ProjectDetail';
 import AllProjects from './components/AllProjects'; 
 import { Analytics } from '@vercel/analytics/react';
+import Achievement from './components/Achievements';
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <Hero />
       <Domains />
       <Projects />
+      <Achievement />
       <About />
       <Contact />
       <Footer />
