@@ -1,2 +1,1 @@
-# CMDC| Computational Mechanics and Design Club
-# Official Website
+# CMDC| Computational Mechanics and Design Club ( CMDC )
