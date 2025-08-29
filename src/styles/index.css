@@ -25,11 +25,6 @@ body {
   scroll-behavior: smooth;
 }
 
-@utility bg-grid-slate-800\/\[0\.2\] {
-  background-image: linear-gradient(to right, #262626 1px, transparent 1px),
-                    linear-gradient(to bottom, #262626 1px, transparent 1px);
-}
-
 @utility perspective-1000 {
   perspective: 1000px;
 }
