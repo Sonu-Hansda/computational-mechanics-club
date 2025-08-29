@@ -15,7 +15,7 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       <Header />
-      <Hero />
+      <Hero/>
       <Domains />
       <Projects />
       <Achievement />
