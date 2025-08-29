@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg:        oklch(10% 0 0);          /* #111 */
+  --color-surface:   oklch(12% 0 0);          /* #131313 */
+  --color-border:    oklch(20% 0 0);          /* #222 */
+
+  --color-primary:   oklch(82% 0.25 135);     /* neon-lime  */
+  --color-secondary: oklch(68% 0.29 0);       /* hot-pink   */
+  --color-white:     oklch(98% 0 0);
+  --color-muted:     oklch(70% 0 0);
+
+  --font-sans: 'Inter', 'Satoshi', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace;
+
+  /* tight, ultra-bold headlines like LanderX */
+  --text-hero: clamp(2.75rem, 8vw + 1rem, 6rem);
+  --font-weight-black: 900;
+}
+
+html,
+body {
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+}
+
+@utility bg-grid-slate-800\/\[0\.2\] {
+  background-image: linear-gradient(to right, #262626 1px, transparent 1px),
+                    linear-gradient(to bottom, #262626 1px, transparent 1px);
+}
+
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+@utility backface-hidden {
+  backface-visibility: hidden;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideIn {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideWipe {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.slide-enter {
+  animation: slideWipe 1s ease-in-out forwards;
+}
