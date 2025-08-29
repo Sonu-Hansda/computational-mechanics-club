@@ -22,17 +22,17 @@ export default function Footer() {
                 href="https://www.instagram.com/cmdc.nitjsr?igsh=anNnMm9ia2lhNzI5"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-[#00ffe1] transition-colors"
+                className="hover:text-[#B9FF66] transition-colors"
               >
                 <FaInstagram />
               </a>
-              <a href="#" className="hover:text-[#00ffe1] transition-colors">
+              <a href="#" className="hover:text-[#B9FF66] transition-colors">
                 <FaLinkedin />
               </a>
-              <a href="#" className="hover:text-[#00ffe1] transition-colors">
+              <a href="#" className="hover:text-[#B9FF66] transition-colors">
                 <FaGithub />
               </a>
-              <a href="#" className="hover:text-[#00ffe1] transition-colors">
+              <a href="#" className="hover:text-[#B9FF66] transition-colors">
                 <FaTwitter />
               </a>
             </div>
@@ -53,7 +53,7 @@ export default function Footer() {
                 <li key={i}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className="hover:text-[#00ffe1] transition-colors"
+                   className="hover:text-[#B9FF66] transition-colors"
                   >
                     {item}
                   </a>
@@ -89,7 +89,7 @@ export default function Footer() {
             </p>
             <a
               href="#contact"
-              className="inline-block mt-4 px-4 py-2 bg-cyan-600 text-white text-sm font-medium rounded-md hover:opacity-80 transition-opacity"
+             className="inline-block mt-4 px-4 py-2 bg-[#B9FF66] text-[#111] text-sm font-bold rounded-md hover:bg-[#B9FF66]/90 transition"
             >
               Get in Touch
             </a>
