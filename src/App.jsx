@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './components/About';
-import Contact from './components/Contact';
-import Domains from './components/Domains';
+import About from './sections/About';
+import Contact from './sections/Contact';
+import Domains from './sections/Domains';
 import Footer from './components/Footer';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
+import Header from './sections/Header';
+import Hero from './sections/Hero';
+import Projects from './sections/Projects';
 import ProjectDetail from './components/ProjectDetail';
 import AllProjects from './components/AllProjects'; 
 import { Analytics } from '@vercel/analytics/react';
-import Achievement from './components/Achievements';
+import Achievement from './sections/Achievements';
 
 function HomePage() {
   return (
