@@ -10,7 +10,6 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
 
   /* Smooth spring for numbers */
-  const spring = { stiffness: 100, damping: 20, bounce: 0.5 };
 
   return (
     <section

@@ -1,12 +1,4 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-
-const stats = [
-  { front: '200+', back: 'Active Members', icon: '👥' },
-  { front: '12', back: 'Projects Shipped', icon: '🚀' },
-  { front: '5', back: 'Core Domains', icon: '⚙️' },
-  { front: '3', back: 'Major Wins', icon: '🏆' },
-];
 
 const story = [
   {
@@ -27,8 +19,6 @@ const story = [
 ];
 
 export default function About() {
-  const [flipped, setFlipped] = useState(stats.map(() => false));
-
   return (
     <section id="about" className="relative isolate bg-[#111] py-24 md:py-32">
       {/* subtle scan-line backdrop */}

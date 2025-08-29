@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+import PropTypes from 'prop-types';
+
 export default function NavLink({ href, children, active }) {
     return (
         <a
@@ -21,3 +23,9 @@ export default function NavLink({ href, children, active }) {
 
     );
 }
+
+NavLink.propTypes = {
+    href: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+    active: PropTypes.bool,
+};

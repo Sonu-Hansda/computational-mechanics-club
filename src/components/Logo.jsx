@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Logo({ size = 'md' }) {
 const sz = size === 'sm' ? 'h-10 w-10' : 'h-12 w-12';
 return (
@@ -8,3 +10,7 @@ alt="CMDC"
 />
 );
 }
+
+Logo.propTypes = {
+    size: PropTypes.oneOf(['sm', 'md']),
+};
