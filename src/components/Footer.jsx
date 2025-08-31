@@ -1,48 +1,108 @@
+import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+
 export default function Footer() {
-    return (
-        <footer className="bg-gray-950 text-white py-12">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div className="col-span-1 md:col-span-2">
-                        <h3 className="text-xl font-bold mb-4">CMDC</h3>
-                        <p className="text-gray-400 mb-4 max-w-md">
-                            A technical club empowering students through hands-on experience in CAD, Simulation, AI/ML, and Product Design.
-                        </p>
-                        <div className="flex space-x-4">
-                            <a target="_blank"href="https://www.instagram.com/cmdc.nitjsr?igsh=anNnMm9ia2lhNzI5" className="text-gray-400 hover:text-[#00ffe1] transition-colors">
-                                <img src=".\images\insta.png" alt="d" className="w-16 ml-1 rounded-lg filter invert"/>
-                            </a>
-                        </div>
-                    </div>
+  return (
+    <footer className="relative bg-neutral-950 w-full h-full flex flex-col justify-center items-center py-16 overflow-hidden">
+      <div className="relative bg-neutral-900 shadow-lg rounded-2xl w-full max-w-6xl px-8 py-10 z-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="col-span-1">
+            <h3 className="text-2xl font-extrabold text-white">CMDC</h3>
+            <p className="text-neutral-400 text-sm mt-3 max-w-xs leading-relaxed">
+              A technical club empowering students through hands-on experience
+              in CAD, Simulation, AI/ML, and Product Design.
+            </p>
 
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-                        <ul className="space-y-2">
-                            {['Home', 'Domains', 'Projects','Achievement', 'About', 'Contact'].map((item, index) => (
-                                <li key={index}>
-                                    <a href={`#${item.toLowerCase()}`} className="text-gray-400 hover:text-[#00ffe1] transition-colors">
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4">Join Us</h4>
-                        <p className="text-gray-400 text-sm">
-                            Interested in joining our club or collaborating?
-                        </p>
-                        <a href="#contact" className="inline-block mt-2 px-4 py-2 bg-gradient-to-b from-[#00ffe1] to-[#0a6971] text-black text-sm font-medium rounded-md hover:opacity-90 transition-opacity">
-                            Get in Touch
-                        </a>
-                    </div>
-                </div>
-
-                <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-                    <p>&copy; {new Date().getFullYear()} CMDC. All rights reserved.</p>
-                </div>
+            <div className="flex items-center gap-4 mt-5 text-neutral-300 text-lg">
+              <a
+                href="https://www.instagram.com/cmdc.nitjsr?igsh=anNnMm9ia2lhNzI5"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-[#B9FF66] transition-colors"
+              >
+                <FaInstagram />
+              </a>
+              <a href="#" className="hover:text-[#B9FF66] transition-colors">
+                <FaLinkedin />
+              </a>
+              <a href="#" className="hover:text-[#B9FF66] transition-colors">
+                <FaGithub />
+              </a>
+              <a href="#" className="hover:text-[#B9FF66] transition-colors">
+                <FaTwitter />
+              </a>
             </div>
-        </footer>
-    )
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-white">Quick Links</h4>
+            <ul className="mt-3 space-y-2 text-neutral-400 text-sm">
+              {[
+                "Home",
+                "Domains",
+                "Projects",
+                "Achievement",
+                "About",
+                "Contact",
+              ].map((item, i) => (
+                <li key={i}>
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                   className="hover:text-[#B9FF66] transition-colors"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-white">Resources</h4>
+            <ul className="mt-3 space-y-2 text-neutral-400 text-sm">
+              <li>
+                <a href="#">Documentation</a>
+              </li>
+              <li>
+                <a href="#">Tutorials</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold text-white">Join Us</h4>
+            <p className="text-neutral-400 text-sm mt-3">
+              Interested in joining our club or collaborating?
+            </p>
+            <a
+              href="#contact"
+             className="inline-block mt-4 px-4 py-2 bg-[#B9FF66] text-[#111] text-sm font-bold rounded-md hover:bg-[#B9FF66]/90 transition"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        <div className="border-t border-neutral-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-neutral-500 text-sm">
+          <p>© {new Date().getFullYear()} CMDC. All rights reserved.</p>
+          <div className="flex gap-6 mt-3 md:mt-0">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden z-0 pointer-events-none">
+        <h1 className="text-[8rem] md:text-[12rem] font-extrabold text-neutral-800 opacity-50 select-none w-full text-center transform translate-y-1/2">
+          CMDC
+        </h1>
+      </div>
+    </footer>
+  );
 }

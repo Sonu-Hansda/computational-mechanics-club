@@ -1,30 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './components/About';
-import Contact from './components/Contact';
-import Domains from './components/Domains';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import ProjectDetail from './components/ProjectDetail';
-import AllProjects from './components/AllProjects'; 
+import ProjectDetail from './pages/ProjectDetail';
+import AllProjects from './pages/AllProjects'; 
 import { Analytics } from '@vercel/analytics/react';
-import Achievement from './components/Achievements';
-
-function HomePage() {
-  return (
-    <div className="min-h-screen bg-gray-900 text-gray-100">
-      <Header />
-      <Hero />
-      <Domains />
-      <Projects />
-      <Achievement />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
-  );
-}
+import HomePage from './pages/HomePage';
 
 export default function App() {
   return (
