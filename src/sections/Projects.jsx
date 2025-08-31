@@ -9,7 +9,7 @@ const projects = [
   { title: 'CV-Controlled Tele-Robotic Hand', category: 'AI/ML', img: '/images/sushil.png' },
   { title: 'Fish-Fin Heat-Sink', category: 'OpenSCAD', img: '/images/aditya.jpg' },
   { title: 'Wack-a-Mole Game', category: 'UI/UX', img: '/images/Wack-a-mole.jpg' },
-  { title: 'Traffic-Light CFD', category: 'CFD', img: '/images/traffic_light.png' },
+  { title: 'Traffic-Light CFD', category: 'CFD', img: '/images/trafficLight.jpg' },
   { title: 'Melody Buzzers', category: 'AI/ML', img: '/images/Melody_Buzzers.png' },
   { title: 'Stack-Tower Game', category: 'UI/UX', img: '/images/Stack_tower_game.jpg' },
   { title: 'RGB-Light Arduino', category: 'FEA', img: '/images/RGB_Light_arduino.png' },

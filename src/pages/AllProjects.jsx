@@ -40,12 +40,12 @@ const projects = [
         {
             title: "Traffic Light Simulation",
             category: "Embedded Systems / IoT Simulation",
-            image: "/images/traffic_light.png"
+            image: "/images/trafficLight.jpg"
         },
         {
             title: "Melody Buzzers",
             category: "Embedded Systems / Sound Engineering",
-            image: "/images/Melody_Buzzers.png"
+            image: "/images/Melody_Buzzers.png",
         },
         {
             title: "Stack Tower Game",

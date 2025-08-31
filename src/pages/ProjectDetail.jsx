@@ -67,7 +67,7 @@ const projects = [
   {
     title: "Traffic Light Simulation using Arduino in Tinkercad",
     category: "Embedded Systems / IoT Simulation",
-    image: "/images/traffic_light.png",
+    image: "/images/trafficLight.jpg",
     description:
       "This project simulates a basic traffic light system using an Arduino Uno and three LEDs.(Red, Yellow, and Green). The Arduino is programmed to control the LEDs in a sequence that mimics real-world traffic lights. Each LED turns on for a specific duration—Green for 'Go', Yellow for 'Caution', and Red for 'Stop'—in a continuous loop. This project helps in understanding digital output control, timing delays, and the concept of traffic automation using Arduino in Tinkercad. ",
     link: "https://www.tinkercad.com/things/bLgKClS4Yut-project-3-traffic-light",
