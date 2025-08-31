@@ -7,7 +7,7 @@ const projects = [
     title:
       "Design and Development of  Automated Household Waste Segregation System",
     category: "ANSYS",
-    image: "/images/shu.png",
+    image: "/images/household-waste.png",
     description:
       "This project addresses the growing challenge of urban waste management by developing a low-cost, automated system for segregating household waste into wet, dry, and metal categories at the source. Manual segregation is often inconsistent, unhygienic, and inefficient, leading to contamination and reduced recycling effectiveness.The proposed solution leverages an Arduino Uno-based control system with IR, moisture, and proximity sensors to detect and classify waste within a second. A stepper-motor-driven rotating base accurately aligns the detected waste with the appropriate bin, while a servo motor opens a trapdoor to release it. This parallel sensing and classification approach ensures high-speed and precise segregation with minimal complexity.The system was visualized using a static 3D CAD model to check alignments and prepare for future mechanical simulations."
       
@@ -16,7 +16,7 @@ const projects = [
     title:
       "ML Based Predictive Modeling of Wire EDM Performance Metrics",
     category: "AI/ML",
-    image: "/images/sonu.png",
+    image: "/images/ML-Predictive.jpeg",
     description:
       "This project explores the use of machine learning to predict performance outcomes in Wire Electric Discharge Machining (WEDM) under parametric uncertainty. Key machining parameters—Pulse-On Time (Ton), Peak Current (IP), and Servo Voltage (SV)—significantly influence Cutting Rate (CR) and Surface Roughness (SR), but often fluctuate due to real-world operational variability.To address this, a synthetic dataset with Gaussian noise was used to simulate uncertain WEDM conditions. Three models—Linear Regression, Decision Trees, and Support Vector Machines (SVM)—were trained and evaluated. Among them, SVM delivered the highest accuracy, demonstrating strong predictive performance.Sensitivity analysis revealed Ton and IP as the most influential parameters. The study emphasizes the potential of machine learning in improving WEDM accuracy, efficiency, and reliability. Future enhancements will include validation with experimental data and integration of additional parameters like material properties.",
       link:"https://sonu-hansda-minor-project-ecm-semester-4.streamlit.app/"
@@ -25,7 +25,7 @@ const projects = [
     title:
       "CFD-Based Aerodynamic Analysis of the NACA 0012 Airfoil",
     category: "ANSYS",
-    image: "/images/vivek2.jpg",
+    image: "/images/air-foil.png",
     description:
       "This study focuses on the computational fluid dynamics (CFD) simulation of the NACA 0012 airfoil, a symmetric profile widely used in aerospace and engineering applications. The main objective is to investigate the variation of lift (Cl) and drag (Cd) coefficients with changing angle of attack, using different turbulence models—namely k-ε, k-ω, and SST—within ANSYS Fluent.A key focus is placed on the transition from laminar to turbulent flow, which strongly influences aerodynamic performance. The study performs a grid independence test to ensure solution accuracy and examines how mesh resolution and near-wall turbulence behavior affect simulation results. Comparative analysis is also conducted between a flat plate and the NACA 0012 airfoil, highlighting complex flow phenomena such as vortex shedding, stall, and boundary layer separation.Findings show that the choice of turbulence model significantly impacts simulation accuracy, especially at higher angles of attack. The results are validated against benchmark experimental data, affirming that CFD, when properly configured, can closely replicate physical behavior and improve airfoil design decisions."
   },
@@ -51,7 +51,7 @@ const projects = [
     title:
       "Fish Fin-Inspired Heat Sink Design",
     category: "OpenSCAD/CAD",
-    image: "/images/aditya.jpg",
+    image: "/images/heat-sink.png",
     description:
       "This project explores a novel approach to thermal management in electronic devices by designing a heat sink inspired by the natural geometry of fish fins. Traditional heat sinks with straight fins often face limitations in airflow and heat dissipation, especially in compact or fanless systems. Drawing from biomimicry, this design uses curved, tilted fins that mimic the flow-efficient structure of fish fins to enhance surface area, guide airflow smoothly, and reduce pressure drop.Using parametric modeling tools like OpenSCAD and Fusion 360, a 3D-printable heat sink was created and evaluated through simulation. Results show improved cooling performance, lower airflow resistance, and better thermal uniformity compared to conventional designs. The project demonstrates how nature-inspired structures can lead to more efficient and sustainable engineering solutions, particularly for low-power and silent electronic systems."
       
@@ -75,7 +75,7 @@ const projects = [
   {
     title: "Melody Buzzers Using Arduino in Tinkercad",
     category: "Embedded Systems / Sound Engineering",
-    image: "/images/Melody_Buzzers.png",
+    image: "/images/buzzer.png",
     description:
       "This project demonstrates how to generate melodies using a piezo buzzer connected to an Arduino Uno. The Arduino is programmed to send specific frequencies to the piezo buzzer, creating musical notes. This project is a fun and educational way to learn about sound generation, frequency control, and basic programming using Arduino in Tinkercad. ",
     link: "https://www.tinkercad.com/things/0M2LONhbZF4-project-6-melody-buzzers-",
@@ -83,7 +83,7 @@ const projects = [
   {
     title: "Stack Tower Game",
     category: "UI/UX Design",
-    image: "/images/Stack_tower_game.jpg",
+    image: "/images/stack-tower.png",
     description:
       " A fun and interactive stack tower game made with using Html css and javascript and canvas Api which taught me things and enabled me to go deeper in the world of web development. This game is built for just fun and anyone can play it and can suggest changes .",
     link: "https://anoopkr1906.github.io/Stack-Tower-Game-HTML_CSS_JS/",
@@ -91,7 +91,7 @@ const projects = [
   {
     title: "RGB Light Control using Arduino in Tinkercad",
     category: "Embedded Systems / Electronics Simulation",
-    image: "/images/RGB_Light_arduino.png",
+    image: "/images/rgb-light1.png",
     description:
       "This project showcases how to control an RGB LED using an Arduino Uno. By sending PWM (Pulse Width Modulation) signals to the red, green, and blue pins of the RGB LED, different colors can be created by adjusting the intensity of each component. This project helps in understanding RGB color mixing, PWM control, and the basics of interfacing LEDs with Arduino in Tinkercad. ",
     link: "https://www.tinkercad.com/things/7Q55UmHDH0u-project-10-rgb-light-",
@@ -99,7 +99,7 @@ const projects = [
   {
     title: "Reverse Countdown Display using Arduino in Tinkercad",
     category: "Product Design",
-    image: "/images/Reverse_countdown.png",
+    image: "/images/countdown.png",
     description:
       "A wireframe layout for a web product's interface to guide development.",
     link: "https://www.tinkercad.com/things/1sRFlURrtSb-project-11-countdown-light",

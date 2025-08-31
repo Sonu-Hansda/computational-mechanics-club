@@ -2,18 +2,18 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const projects = [
-  { title: 'Automated Household Waste Segregation', category: 'ANSYS', img: '/images/shubham.png' },
-  { title: 'ML-Predictive Wire-EDM Modelling', category: 'AI/ML', img: '/images/sonu.png' },
-  { title: 'CFD NACA 0012 Airfoil Study', category: 'ANSYS', img: '/images/vivek1.jpg' },
+  { title: 'Automated Household Waste Segregation', category: 'ANSYS', img: '/images/household-waste.png' },
+  { title: 'ML-Predictive Wire-EDM Modelling', category: 'AI/ML', img: '/images/ML-Predictive.jpeg' },
+  { title: 'CFD NACA 0012 Airfoil Study', category: 'ANSYS', img: '/images/air-foil.png' },
   { title: 'BioSkin-AI Prosthetic Skin', category: 'AI/ML', img: '/images/srijan.png' },
   { title: 'CV-Controlled Tele-Robotic Hand', category: 'AI/ML', img: '/images/sushil.png' },
-  { title: 'Fish-Fin Heat-Sink', category: 'OpenSCAD', img: '/images/aditya.jpg' },
+  { title: 'Fish-Fin Heat-Sink', category: 'OpenSCAD', img: '/images/heat-sink.png' },
   { title: 'Wack-a-Mole Game', category: 'UI/UX', img: '/images/Wack-a-mole.jpg' },
   { title: 'Traffic-Light CFD', category: 'CFD', img: '/images/trafficLight.jpg' },
-  { title: 'Melody Buzzers', category: 'AI/ML', img: '/images/Melody_Buzzers.png' },
-  { title: 'Stack-Tower Game', category: 'UI/UX', img: '/images/Stack_tower_game.jpg' },
-  { title: 'RGB-Light Arduino', category: 'FEA', img: '/images/RGB_Light_arduino.png' },
-  { title: 'Reverse Countdown Display', category: 'Product', img: '/images/Reverse_countdown.png' },
+  { title: 'Melody Buzzers', category: 'AI/ML', img: '/images/buzzer.png' },
+  { title: 'Stack-Tower Game', category: 'UI/UX', img: '/images/stack-tower.png' },
+  { title: 'RGB-Light Arduino', category: 'FEA', img: '/images/rgb-light1.png' },
+  { title: 'Reverse Countdown Display', category: 'Product', img: '/images/countdown.png' },
 ];
 
 export default function Projects() {

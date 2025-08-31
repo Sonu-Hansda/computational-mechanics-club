@@ -5,17 +5,17 @@ const projects = [
         {
             title: "Design and Development of  Automated Household Waste Segregation System",
             category: "ANSYS",
-            image: "/images/shubham.png"
+            image: "/images/household-waste.png"
         },
         {
             title: "ML Based Predictive Modeling of Wire EDM Performance Metrics",
             category: "AI/ML",
-            image: "/images/sonu.png"
+            image: "/images/ML-Predictive.jpeg"
         },
         {
             title: "CFD-Based Aerodynamic Analysis of the NACA 0012 Airfoil",
             category: "ANSYS",
-            image: "/images/vivek1.jpg"
+            image: "/images/air-foil.png"
         },
         {
             title: "BioSkin-AI: A Machine Learning-Powered Self-Healing Prosthetic Skin",
@@ -30,7 +30,7 @@ const projects = [
         {
             title: "Fish Fin-Inspired Heat Sink Design",
             category: "OpenSCAD/CAD",
-            image: "/images/aditya.jpg"
+            image: "/images/heat-sink.png"
         },
         {
             title: "Wack-a-Mole Game",
@@ -45,22 +45,22 @@ const projects = [
         {
             title: "Melody Buzzers",
             category: "Embedded Systems / Sound Engineering",
-            image: "/images/Melody_Buzzers.png",
+            image: "/images/buzzer.png",
         },
         {
             title: "Stack Tower Game",
             category: "UI/UX Design",
-            image: "/images/Stack_tower_game.jpg"
+            image: "/images/stack-tower.png"
         },
         {
             title: "RGB Light Control",
             category: "Embedded Systems / Electronics Simulation",
-            image: "..//images/RGB_Light_arduino.png"
+            image: "..//images/rgb-light1.png"
         },
         {
             title: "Reverse Countdown Display",
             category: "Product Design",
-            image: "..//images/Reverse_countdown.png"
+            image: "..//images/countdown.png"
         }
     ];
 
