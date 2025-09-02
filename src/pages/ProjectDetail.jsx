@@ -104,6 +104,14 @@ const projects = [
       "A wireframe layout for a web product's interface to guide development.",
     link: "https://www.tinkercad.com/things/1sRFlURrtSb-project-11-countdown-light",
   },
+  {
+    title: "ECM CGPA Tracker",
+    category: "UI/UX",
+    image: "/images/cgpaTracker.png",
+    description:
+      "A web-based application to track and calculate CGPA.",
+    link: "https://ecm-cgpa-tracker.vercel.app/",
+  },
 ];
 
 export default function ProjectDetail() {
