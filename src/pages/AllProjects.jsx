@@ -61,7 +61,8 @@ const projects = [
             title: "Reverse Countdown Display",
             category: "Product Design",
             image: "..//images/countdown.png"
-        }
+        },
+          { title: 'ECM CGPA Tracker', category: 'UI/UX', image: '..//images/cgpaTracker.png' },
     ];
 
 export default function AllProjects() {
