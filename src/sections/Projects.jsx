@@ -60,6 +60,7 @@ export default function Projects() {
                 <img
                   src={p.img}
                   alt={p.title}
+                  loading='lazy'
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 {/* lime scanner overlay */}

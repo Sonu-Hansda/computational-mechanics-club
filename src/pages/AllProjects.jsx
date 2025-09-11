@@ -108,6 +108,7 @@ export default function AllProjects() {
                 <img
                   src={p.image}
                   alt={p.title}
+                  loading='lazy'
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 {/* lime overlay on hover */}
