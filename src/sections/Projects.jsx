@@ -13,7 +13,7 @@ const projects = [
   { title: 'Melody Buzzers', category: 'AI/ML', img: '/images/buzzer.png' },
   { title: 'Stack-Tower Game', category: 'UI/UX', img: '/images/stack-tower.png' },
   { title: 'RGB-Light Arduino', category: 'FEA', img: '/images/rgb-light1.png' },
-  { title: 'Reverse Countdown Display', category: 'Product', img: '/images/countdown.png' },
+  { title: 'ECM CGPA Tracker', category: 'UI/UX', img: '/images/cgpaTracker.png' },
 ];
 
 export default function Projects() {
