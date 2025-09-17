@@ -80,9 +80,9 @@ export default function Header() {
                         {/* Logo Section */}
                         <div className="flex items-center gap-x-3">
                             <div className="relative">
-                                <img 
-                                    className="h-10 md:h-14 w-10 md:w-14 rounded-lg" 
-                                    src="/images/cmdclogo.png" 
+                                <img
+                                    className="h-10 md:h-14 w-10 md:w-14 rounded-lg"
+                                    src="/images/cmdclogo.png"
                                     alt="CMDC Logo"
                                 />
                             </div>
@@ -126,30 +126,30 @@ export default function Header() {
             {/* Full Screen Mobile Menu Overlay */}
             <div className={`fixed inset-0 z-[60] md:hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 {/* Background Overlay */}
-                <div 
+                <div
                     className={`absolute inset-0 bg-neutral-950 transition-opacity duration-500 ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}
                     onClick={closeMenu}
                 ></div>
-                
+
                 {/* Menu Content */}
                 <div className={`relative h-full flex flex-col transition-transform duration-500 ease-out ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
                     {/* Header Section with Centered Logo and Cross */}
                     <div className="flex items-center justify-between p-6 border-b border-neutral-800">
                         {/* Empty div for spacing */}
                         <div className="w-12"></div>
-                        
+
                         {/* Centered Logo and Text */}
                         <div className="flex items-center gap-x-3">
-                            <img 
-                                className="h-12 w-12 rounded-lg" 
-                                src="/images/cmdclogo.png" 
+                            <img
+                                className="h-12 w-12 rounded-lg"
+                                src="/images/cmdclogo.png"
                                 alt="CMDC Logo"
                             />
                             <div>
                                 <h2 className="text-white font-bold text-3xl tracking-tight">CMDC</h2>
                             </div>
                         </div>
-                        
+
                         {/* Close Button */}
                         <button
                             className="p-3 rounded-full text-neutral-400 hover:text-cyan-400 hover:bg-neutral-800 transition-all duration-300"
@@ -186,7 +186,7 @@ export default function Header() {
                     <div className="flex justify-center pb-10 bg-neutral-950">
                         <div className="flex space-x-2">
                             {[...Array(3)].map((_, i) => (
-                                <div 
+                                <div
                                     key={i}
                                     className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"
                                     style={{ animationDelay: `${i * 200}ms` }}
