@@ -9,15 +9,20 @@ import Projects from "../sections/Projects";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100">
-      <Header />
-      <Hero/>
-      <Domains />
-      <Projects />
-      <Achievement />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <title>Computational Mechanics & Design Club - NIT Jamshedpur</title>
+      <meta name="description" content="CMDC bridges Computer Science & Mechanical Engineering to solve real-world problems using CFD, FEA, AI/ML. Explore student projects, hackathons, resources." />
+      <link rel="canonical" href="https://cmdc.in/" />
+      <div className="min-h-screen bg-gray-900 text-gray-100">
+        <Header />
+        <Hero />
+        <Domains />
+        <Projects />
+        <Achievement />
+        <About />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
