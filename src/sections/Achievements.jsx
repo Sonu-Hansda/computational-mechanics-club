@@ -1,3 +1,4 @@
+'use client';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -44,7 +45,7 @@ export default function Achievement() {
             </p>
 
             <p className="mt-6 max-w-xl text-neutral-400">
-              Organized by the Indian Society for Applied Mechanics (ISAM) at IIITDM Kancheepuram.  
+              Organized by the Indian Society for Applied Mechanics (ISAM) at IIITDM Kancheepuram.
               A four-member CMDC team cracked a real-world mechanics problem—fast, lean and AI-assisted.
             </p>
 
@@ -66,9 +67,9 @@ export default function Achievement() {
               className="group mt-8 inline-flex items-center gap-2 font-bold text-[#B9FF66]"
             >
               Read the full story
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0l-3.75 3.75M21 12H3" />
-            </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
             </a>
           </motion.div>
 

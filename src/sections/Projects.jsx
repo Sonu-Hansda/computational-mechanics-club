@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+'use client'
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -56,7 +57,7 @@ export default function Projects() {
               transition={{ type: 'spring', stiffness: 100, delay: i * 0.08 }}
               className={`mb-6 break-inside-avoid relative overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-2)] group ${heights[i % heights.length]}`}
             >
-              <Link to={`/projects/${i}`}>
+              <Link href={`/projects/${i}`}>
                 <img
                   src={p.img}
                   alt={p.title}
@@ -87,7 +88,7 @@ export default function Projects() {
           className="mt-12 text-center"
         >
           <Link
-            to="/all-projects"
+            href="/all-projects"
             className="group inline-flex items-center gap-2 rounded-md border border-[var(--color-primary)] px-6 py-3 font-bold text-[var(--color-primary)] transition-colors hover:bg-[var(--color-primary)] hover:text-[var(--color-bg)]"
           >
             View All Projects
