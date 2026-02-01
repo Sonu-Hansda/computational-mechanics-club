@@ -8,9 +8,15 @@ export default {
     ],
     theme: {
         extend: {
+            colors: {
+                bg: "#111",
+                surface: "#131313",
+                primary: "#B9FF66", // The Neon Lime
+            },
             fontFamily: {
-                sans: ['var(--font-sans)'],
-                mono: ['var(--font-mono)'],
+                // This connects Next.js fonts to Tailwind
+                sans: ['var(--font-sans)', 'sans-serif'],
+                mono: ['var(--font-mono)', 'monospace'],
             },
         },
     },
