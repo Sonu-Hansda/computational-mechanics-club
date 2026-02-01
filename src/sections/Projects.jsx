@@ -43,18 +43,17 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        {/* masonry grid */}
         <motion.div
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-          className="mt-16 columns-1 gap-6 sm:columns-2 lg:columns-4"
+          viewport={{ once: true, margin: "-50px" }} // Added margin to trigger earlier
+          className="mt-16 flex flex-col gap-6 sm:block sm:columns-2 lg:columns-4"
         >
           {projects.map((p, i) => (
             <motion.div
               key={i}
-              variants={{ hidden: { opacity: 0, y: 60 }, show: { opacity: 1, y: 0 } }}
-              transition={{ type: 'spring', stiffness: 100, delay: i * 0.08 }}
+              variants={{ hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } }} // Reduced y distance for smoother mobile load
+              transition={{ type: 'spring', stiffness: 100, delay: i * 0.05 }}
               className={`mb-6 break-inside-avoid relative overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-2)] group ${heights[i % heights.length]}`}
             >
               <Link href={`/projects/${i}`}>
@@ -95,7 +94,6 @@ export default function Projects() {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0l-3.75 3.75M21 12H3" />
             </svg>
-
           </Link>
         </motion.div>
       </div>
