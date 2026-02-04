@@ -32,9 +32,9 @@ export default function Hero() {
         {/* badge */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 45 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-6 inline-block rounded-full border border-[var(--color-primary)]/30 bg-[var(--color-primary)]/10 px-4 py-1.5 text-sm font-semibold text-[var(--color-primary)]"
+          className="mb-12 inline-block rounded-full border border-[var(--color-primary)]/10 bg-[var(--color-primary)]/10 px-4 py-1.5 text-sm font-semibold text-[var(--color-primary)]"
         >
           Where Mechanics Meets Machine Learning
         </motion.div>

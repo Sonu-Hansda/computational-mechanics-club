@@ -39,7 +39,7 @@ const item = {
 
 export default function Domains() {
   return (
-    <section id="domains" className="relative isolate bg-[var(--color-bg)] py-24 md:py-32">
+    <section id="domains" className="relative isolate bg-neutral-950 py-24 md:py-32">
       {/* subtle separator gradient */}
       <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[var(--color-bg)] to-[var(--color-surface)]" />
 

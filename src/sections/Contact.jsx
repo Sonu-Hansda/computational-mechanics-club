@@ -101,7 +101,7 @@ export default function Contact() {
                 type="text"
                 name="from_name"
                 className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 text-white placeholder-neutral-500 focus:border-[#B9FF66] focus:ring-1 focus:ring-[#B9FF66] transition"
-                placeholder="Srijan Kumar"
+                placeholder="Your name"
               />
             </div>
             <div>
@@ -110,7 +110,7 @@ export default function Contact() {
                 type="email"
                 name="from_email"
                 className="w-full rounded-md border border-neutral-700 bg-neutral-900 px-4 py-3 text-white placeholder-neutral-500 focus:border-[#B9FF66] focus:ring-1 focus:ring-[#B9FF66] transition"
-                placeholder="srijan@example.com"
+                placeholder="yourmail@example.com"
               />
             </div>
           </div>

@@ -23,8 +23,8 @@ export default function AllProjects() {
                         className="text-center"
                     >
                         <h1 className="font-black text-4xl leading-none tracking-tight text-white sm:text-5xl md:text-6xl">
-                            <span className="text-white">Every</span>{' '}
-                            <span className="text-[#B9FF66]">Project</span>
+                            <span className="text-white">All</span>{' '}
+                            <span className="text-[#B9FF66]">Projects</span>
                         </h1>
                     </motion.div>
 
